@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mundo Soñado, agencia de viajes en Cadereyta Jiménez, N.L. Paquetes turísticos, escapadas y destinos nacionales e internacionales.">
+  <title>Mundo Soñado | Agencia de Viajes</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a href="index.html" id="logo" aria-label="Mundo Soñado, ir al inicio">
+        <img src="img/logo-mundo-sonado.png" alt="Logo de Mundo Soñado, agencia de viajes: globo terráqueo con un avión" width="64" height="64">
+        <span>Agencia de Viajes · Mundo Soñado</span>
+      </a>
+      <button id="boton-menu" class="boton-menu" type="button" aria-label="Abrir o cerrar el menú" aria-controls="menu-principal" aria-expanded="false">
+        <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h18M3 6h18M3 18h18"/></svg><svg class="i-cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <nav class="menu" aria-label="Navegación principal">
+      <ul id="menu-principal">
+        <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
+        <li><a href="paquetes.html">Paquetes</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section id="hero" class="hero portada" aria-labelledby="titulo-hero">
+      <div class="contenedor">
+        <div>
+          <h1 id="titulo-hero">Tu próximo destino, <em>nuestra meta</em></h1>
+          <p class="lead">Viaja sin preocupaciones: nosotros nos encargamos de todo. Vuelos, hoteles, tours y transporte organizados según tus gustos y tu presupuesto.</p>
+          <div class="botones">
+            <a class="boton-primario" href="paquetes.html">Ver paquetes</a>
+            <a class="boton-secundario" href="https://wa.me/528184724203" target="_blank" rel="noopener noreferrer">Cotiza por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="marco" src="img/fotos/cancun.jpg" onerror="this.onerror=null;this.src='img/cancun.svg'"  alt="Playa de Cancún, Quintana Roo" width="800" height="560">
+          <img class="insignia" src="img/logo-mundo-sonado.png" alt="Logo de Mundo Soñado" width="160" height="160">
+          <span class="etiqueta-flotante"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>Destinos nacionales e internacionales</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-premium">
+      <div class="contenedor dos-columnas">
+        <div>
+          <span class="etiqueta">Paquete estrella</span>
+          <h2 id="titulo-premium">Sueños por el <em>Mundo</em> Premium</h2>
+          <p>Un paquete pensado para que disfrutes sin preocuparte por nada: incluye vuelos, hospedaje de lujo, transporte, alimentación, tours, seguro de viaje y asistencia durante todo el viaje.</p>
+          <p class="precio"><small>Desde</small> $18,999 <small>MXN</small></p>
+          <ul class="lista-check">
+            <li>Destinos: Cancún, Riviera Maya, Los Cabos, Puerto Vallarta y más</li>
+            <li>Atención personalizada y asesoría en todo momento</li>
+          </ul>
+          <div class="botones">
+            <a class="boton-primario" href="paquetes.html">Conocer los paquetes</a>
+          </div>
+        </div>
+        <div class="carrusel individual" role="region" aria-roledescription="carrusel" aria-label="Flyers de Mundo Soñado">
+          <button class="carrusel-boton anterior" type="button" aria-label="Diapositiva anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="pista" tabindex="0">
+            <figure class="diapositiva">
+              <img src="img/flyer-premium.jpg" alt="Flyer del paquete Sueños por el Mundo Premium con servicios incluidos, destinos y precio desde $18,999 pesos" width="810" height="1215" loading="lazy">
+              <figcaption>Paquete Sueños por el Mundo Premium</figcaption>
+            </figure>
+            <figure class="diapositiva">
+              <img src="img/flyer-escapadas.jpg" alt="Flyer de escapadas de 3 a 4 días: Escapada a la Playa, Ruta Pueblos Mágicos y Aventura en la Huasteca con sus precios" width="810" height="1215" loading="lazy">
+              <figcaption>Escapadas de 3 a 4 días</figcaption>
+            </figure>
+            <figure class="diapositiva">
+              <img src="img/flyer-destinos.jpg" alt="Flyer con destinos nacionales e internacionales: Cancún, Los Cabos, Puerto Vallarta, Punta Cana, París y Nueva York" width="810" height="1215" loading="lazy">
+              <figcaption>Destinos nacionales e internacionales</figcaption>
+            </figure>
+          </div>
+          <button class="carrusel-boton siguiente" type="button" aria-label="Diapositiva siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="puntos"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque blanco" aria-labelledby="titulo-paquetes">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <h2 id="titulo-paquetes">Nuestros <em>paquetes</em></h2>
+          <p>Desde escapadas de 3 días hasta viajes premium e internacionales. Desliza para verlos todos.</p>
+        </div>
+        <div class="carrusel " role="region" aria-roledescription="carrusel" aria-label="Paquetes de viaje">
+          <button class="carrusel-boton anterior" type="button" aria-label="Diapositiva anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="pista" tabindex="0">
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/riviera-maya.jpg" onerror="this.onerror=null;this.src='img/riviera-maya.svg'"  alt="Costa de la Riviera Maya, Quintana Roo" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Premium</span>
+              <h3>Sueños por el Mundo Premium</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>A tu medida</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cancún, Riviera Maya, Los Cabos, Puerto Vallarta y más</p>
+              <ul class="lista-check">
+                <li>Vuelos redondos</li>
+                <li>Hospedaje en hoteles 4 y 5 estrellas</li>
+                <li>Transporte privado</li>
+                <li>Desayunos, comidas y cenas</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $18,999 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Sue%C3%B1os%20por%20el%20Mundo%20Premium">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/mazatlan.jpg" onerror="this.onerror=null;this.src='img/mazatlan.svg'"  alt="Malecón y costa de Mazatlán, Sinaloa" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Playa</span>
+              <h3>Escapada a la Playa</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>3 días / 2 noches</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mazatlán, Sinaloa</p>
+              <ul class="lista-check">
+                <li>Transporte redondo</li>
+                <li>Hospedaje</li>
+                <li>Desayunos</li>
+                <li>Seguro de viaje</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $4,200 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Escapada%20a%20la%20Playa">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/real-de-catorce.jpg" onerror="this.onerror=null;this.src='img/real-de-catorce.svg'"  alt="Calles y paisaje de Real de Catorce, San Luis Potosí" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Pueblo mágico</span>
+              <h3>Ruta Pueblos Mágicos</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>4 días / 3 noches</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Real de Catorce y Parras de la Fuente</p>
+              <ul class="lista-check">
+                <li>Transporte redondo</li>
+                <li>Hospedaje</li>
+                <li>Desayunos</li>
+                <li>Recorridos guiados</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $4,800 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Ruta%20Pueblos%20M%C3%A1gicos">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/huasteca.jpg" onerror="this.onerror=null;this.src='img/huasteca.svg'"  alt="Cascadas de la Huasteca Potosina, San Luis Potosí" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Aventura</span>
+              <h3>Aventura en la Huasteca</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>3 días / 2 noches</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Huasteca Potosina, San Luis Potosí</p>
+              <ul class="lista-check">
+                <li>Transporte redondo</li>
+                <li>Hospedaje</li>
+                <li>Tours de aventura y cascadas</li>
+                <li>Guía local</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $3,900 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Aventura%20en%20la%20Huasteca">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/puerto-vallarta.jpg" onerror="this.onerror=null;this.src='img/puerto-vallarta.svg'"  alt="Malecón y bahía de Puerto Vallarta, Jalisco" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Romántico</span>
+              <h3>Escapada Romántica</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>4 días / 3 noches</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Puerto Vallarta, Jalisco</p>
+              <ul class="lista-check">
+                <li>Vuelo redondo</li>
+                <li>Hospedaje</li>
+                <li>Traslados aeropuerto-hotel</li>
+                <li>Desayunos</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $11,900 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Escapada%20Rom%C3%A1ntica">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+            <div class="diapositiva">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/punta-cana.jpg" onerror="this.onerror=null;this.src='img/punta-cana.svg'"  alt="Marina y costa de Punta Cana, República Dominicana" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Internacional</span>
+              <h3>Caribe Internacional</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>5 días / 4 noches</p>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Punta Cana, República Dominicana</p>
+              <ul class="lista-check">
+                <li>Vuelo redondo</li>
+                <li>Hospedaje todo incluido</li>
+                <li>Traslados</li>
+                <li>Seguro de viaje</li>
+              </ul>
+              <p class="precio"><small>Desde</small> $21,500 <small>MXN</small></p>
+              <a class="boton-primario" href="contacto.html?paquete=Caribe%20Internacional">Cotizar paquete</a>
+            </div>
+          </article>
+            </div>
+          </div>
+          <button class="carrusel-boton siguiente" type="button" aria-label="Diapositiva siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="puntos"></div>
+        </div>
+        <div class="botones centro"><a class="boton-secundario" href="paquetes.html">Ver todos los paquetes</a></div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-populares">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <h2 id="titulo-populares">Destinos <em>populares</em></h2>
+          <p>Playas, pueblos mágicos, aventura y ciudades del mundo.</p>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/cancun.jpg" onerror="this.onerror=null;this.src='img/cancun.svg'"  alt="Playa de Cancún, Quintana Roo" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Playa</span>
+              <h3>Cancún</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Quintana Roo</p>
+              <p>Playas de arena blanca y mar turquesa en el Caribe mexicano.</p>
+              <a class="boton-secundario" href="contacto.html?destino=Canc%C3%BAn">Cotizar este destino</a>
+            </div>
+          </article>
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/puerto-vallarta.jpg" onerror="this.onerror=null;this.src='img/puerto-vallarta.svg'"  alt="Malecón y bahía de Puerto Vallarta, Jalisco" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Playa</span>
+              <h3>Puerto Vallarta</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jalisco</p>
+              <p>Malecón, playas del Pacífico y atardeceres frente al mar.</p>
+              <a class="boton-secundario" href="contacto.html?destino=Puerto%20Vallarta">Cotizar este destino</a>
+            </div>
+          </article>
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/real-de-catorce.jpg" onerror="this.onerror=null;this.src='img/real-de-catorce.svg'"  alt="Calles y paisaje de Real de Catorce, San Luis Potosí" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Pueblo mágico</span>
+              <h3>Real de Catorce</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>San Luis Potosí</p>
+              <p>Pueblo mágico en el desierto, con calles empedradas, historia minera y paisajes únicos.</p>
+              <a class="boton-secundario" href="contacto.html?destino=Real%20de%20Catorce">Cotizar este destino</a>
+            </div>
+          </article>
+          <article class="tarjeta con-imagen">
+            <img src="img/fotos/paris.jpg" onerror="this.onerror=null;this.src='img/paris.svg'"  alt="Torre Eiffel en París, Francia" width="800" height="560" loading="lazy">
+            <div class="contenido">
+              <span class="etiqueta">Internacional</span>
+              <h3>París</h3>
+              <p class="datos"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Francia</p>
+              <p>Torre Eiffel, museos y gastronomía en la ciudad de la luz.</p>
+              <a class="boton-secundario" href="contacto.html?destino=Par%C3%ADs">Cotizar este destino</a>
+            </div>
+          </article>
+        </div>
+        <div class="botones centro"><a class="boton-primario" href="destinos.html">Ver los 15 destinos</a></div>
+      </div>
+    </section>
+
+    <section class="bloque blanco" aria-labelledby="titulo-incluye">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <h2 id="titulo-incluye">¿Qué <em>incluye</em> el paquete premium?</h2>
+          <p>Todo lo que necesitas en un solo paquete.</p>
+        </div>
+        <div class="rejilla centrada">
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div>
+            <h3>Vuelos redondos</h3>
+            <span class="detalle">Ida y vuelta</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg></div>
+            <h3>Hospedaje de lujo</h3>
+            <span class="detalle">Hoteles 4 y 5 estrellas</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg></div>
+            <h3>Transporte privado</h3>
+            <span class="detalle">Aeropuerto y tours</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+            <h3>Alimentación</h3>
+            <span class="detalle">Desayunos, comidas y cenas</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            <h3>Tours y excursiones</h3>
+            <span class="detalle">Lugares emblemáticos</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Seguro de viaje</h3>
+            <span class="detalle">Cobertura completa</span>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+            <h3>Asistencia 24/7</h3>
+            <span class="detalle">Durante todo el viaje</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-elegirnos">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <h2 id="titulo-elegirnos">¿Por qué <em>elegirnos</em>?</h2>
+        </div>
+        <div class="rejilla">
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>Atención personalizada</h3>
+            <p>Te escuchamos para armar un viaje a tu medida.</p>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
+            <h3>Asesoría en todo momento</h3>
+            <p>Te acompañamos antes, durante y después de tu viaje.</p>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <h3>Experiencias únicas</h3>
+            <p>Tours y excursiones a lugares emblemáticos.</p>
+          </article>
+          <article class="tarjeta centrada">
+            <div class="icono"><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Seguridad y confianza</h3>
+            <p>Viajes seguros, organizados y accesibles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="estadisticas" aria-labelledby="titulo-encuesta">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <h2 id="titulo-encuesta">Lo que buscan nuestros viajeros</h2>
+        </div>
+        <div class="rejilla">
+          <div><strong data-meta="100" data-sufijo="%">100%</strong>quiere que la agencia organice todos los detalles del viaje</div>
+          <div><strong data-meta="100" data-sufijo="%">100%</strong>contrataría paquetes personalizados</div>
+          <div><strong data-meta="93" data-sufijo="%">93%</strong>prefiere recibir información por WhatsApp</div>
+          <div><strong data-meta="67" data-sufijo="%">67%</strong>prefiere viajar en familia</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-titulo">
+      <div class="contenedor">
+        <h2 id="cta-titulo">¿Listo para tu próxima aventura?</h2>
+        <p>Cuéntanos a dónde quieres ir y te ayudamos a organizar todo tu viaje.</p>
+        <div class="botones centro">
+          <a class="boton-primario" href="contacto.html">Solicitar información</a>
+          <a class="boton-secundario" href="https://wa.me/528184724203" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div class="pie-marca">
+          <img src="img/logo-mundo-sonado.png" alt="Logo de Mundo Soñado, agencia de viajes: globo terráqueo con un avión" width="150" height="150" loading="lazy">
+          <p>Tu próximo destino, nuestra meta.</p>
+        </div>
+        <nav aria-label="Enlaces del pie de página">
+          <h2 class="titulo-pie">Enlaces</h2>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="titulo-pie">Contacto</h2>
+          <ul>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Calle+Hidalgo+385+San+Juan+Cadereyta+Jim%C3%A9nez+Nuevo+Le%C3%B3n" target="_blank" rel="noopener noreferrer">Calle Hidalgo #385, San Juan Cadereyta Jiménez, Nuevo León</a></li>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+528184724203">(818) 472 4203</a></li>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><a href="https://wa.me/528184724203" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="titulo-pie">Síguenos</h2>
+          <ul>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><a href="https://www.facebook.com/share/1K47izk2hy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg><a href="https://www.instagram.com/abigail.t20?srtk=MWN2MWVkdWY3YmVtOA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><a href="https://www.tiktok.com/@av_ms20" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© 2026 Agencia de Viajes · Mundo Soñado. Sitio desarrollado por Abigail Cruz.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

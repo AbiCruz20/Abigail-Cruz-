@@ -1,0 +1,6 @@
+Fotos de los destinos (1000 x 700 px o menos, formato .jpg).
+Cada archivo se llama igual que el destino: cancun.jpg, riviera-maya.jpg, los-cabos.jpg,
+puerto-vallarta.jpg, mazatlan.jpg, real-de-catorce.jpg, parras.jpg, bernal.jpg, huasteca.jpg,
+punta-cana.jpg, paris.jpg, nueva-york.jpg, tequila.jpg, bacalar.jpg, roma.jpg.
+Para cambiar una foto, reemplaza el archivo con el mismo nombre.
+Si una foto falta, la página muestra la ilustración de respaldo (img/<nombre>.svg).
